@@ -1,0 +1,6 @@
+[submodule "websockify"]
+	path = websockify
+	url = https://github.com/novnc/websockify
+[submodule "3proxy"]
+	path = 3proxy
+	url = https://github.com/z3APA3A/3proxy
