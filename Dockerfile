@@ -18,4 +18,4 @@ COPY --from=build /app/bin ./3proxy/
 COPY runboth.sh ./
 RUN chmod +x runboth.sh
 EXPOSE 2080
-ENTRYPOINT [ "./runboth.sh" ]
+CMD [ "./runboth.sh" ]
