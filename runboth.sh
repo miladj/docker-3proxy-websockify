@@ -1,3 +1,9 @@
 #!/usr/bin/env sh
+echo "run"
 ./3proxy/socks -d
-python3 -m websockify 2080 127.0.0.1:1080
+if [ -z "$PORT" ]
+then
+PORT=2080
+fi
+echo "listen on $PORT"
+python3 -m websockify $PORT  127.0.0.1:1080
