@@ -9,7 +9,7 @@ RUN apk update && \
 
 FROM alpine
 RUN apk update && \
-    apk add python py-numpy
+    apk add python3 py3-numpy
 
 ADD websockify /app
 WORKDIR /app
